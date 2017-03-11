@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="24671" started-at="2017-03-11T20:56:29Z" finished-at="2017-03-11T20:56:54Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="24671" started-at="2017-03-11T20:56:29Z" finished-at="2017-03-11T20:56:54Z">
+      <class name="com.learnselenium.tng.Firefox">
+        <test-method status="PASS" signature="start()[pri:0, instance:com.learnselenium.tng.Firefox@edf4efb]" name="start" duration-ms="5212" started-at="2017-03-12T02:26:48Z" finished-at="2017-03-12T02:26:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+      </class> <!-- com.learnselenium.tng.Firefox -->
+      <class name="com.learnselenium.tng.IETestNG">
+        <test-method status="PASS" signature="ieTestNG()[pri:0, instance:com.learnselenium.tng.IETestNG@6442b0a6]" name="ieTestNG" duration-ms="9104" started-at="2017-03-12T02:26:29Z" finished-at="2017-03-12T02:26:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ieTestNG -->
+      </class> <!-- com.learnselenium.tng.IETestNG -->
+      <class name="com.learnselenium.tng.LaunchFirefox">
+        <test-method status="PASS" signature="TestFireFox()[pri:0, instance:com.learnselenium.tng.LaunchFirefox@7f690630]" name="TestFireFox" duration-ms="10325" started-at="2017-03-12T02:26:38Z" finished-at="2017-03-12T02:26:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestFireFox -->
+      </class> <!-- com.learnselenium.tng.LaunchFirefox -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
