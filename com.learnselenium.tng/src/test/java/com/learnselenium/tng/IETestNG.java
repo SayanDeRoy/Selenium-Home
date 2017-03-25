@@ -1,8 +1,8 @@
 package com.learnselenium.tng;
 
+import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.testng.annotations.Test;
 
 public class IETestNG {
 	

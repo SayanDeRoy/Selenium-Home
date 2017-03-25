@@ -15,10 +15,7 @@ public class GoogleOpen {
 		driver.findElement(By.name("q")).clear();
 		driver.findElement(By.name("q")).sendKeys("sharonmsam");
 		
-		driver.findElement(By.name("btnG")).click();
-		
-		
-		
+		driver.findElement(By.name("btnG")).click();	
 	}
 
 }

@@ -3,9 +3,7 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="com.learnselenium.tng.IETestNG"/>
-      <class name="com.learnselenium.tng.LaunchFirefox"/>
-      <class name="com.learnselenium.tng.Firefox"/>
+      <class name="com.learnselenium.tng.ReadExcelGeneric"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

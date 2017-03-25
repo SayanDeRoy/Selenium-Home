@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.learnselenium.tng.LaunchFirefox">
+      <class name="autoIT.FileUpload1">
         <methods>
-          <include name="TestFireFox"/>
+          <include name="upload"/>
         </methods>
-      </class> <!-- com.learnselenium.tng.LaunchFirefox -->
+      </class> <!-- autoIT.FileUpload1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
