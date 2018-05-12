@@ -216,7 +216,9 @@ public class Base {
 	/**
 	 * Take Screenshot
 	 * @param name
+	 * @return
 	 */
+	
 	public static String getScreenShot(String name)
 	{
 		TakesScreenshot ts = (TakesScreenshot)driver;
