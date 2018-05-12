@@ -1,5 +1,7 @@
 package dropDown;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,6 +16,7 @@ WebDriver driver;
 WebElement sort;
 Select sortByValues;
 
+	@BeforeMethod
 	@BeforeTest
 	public void setUp() throws Exception{
 		

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="dropDown.DropDown2">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- dropDown.DropDown2 -->
+      <class name="autoIT.FileUpload1">
+        <methods>
+          <include name="upload"/>
+        </methods>
+      </class> <!-- autoIT.FileUpload1 -->
+      <class name="wait.ImplicitWait1">
+        <methods>
+          <include name="implicitWait1"/>
+        </methods>
+      </class> <!-- wait.ImplicitWait1 -->
+      <class name="dropDown.DropDown1">
+        <methods>
+          <include name="setUp"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- dropDown.DropDown1 -->
+      <class name="readWriteExcel.ReadWriteExcelGeneric">
+        <methods>
+          <include name="readWriteData"/>
+        </methods>
+      </class> <!-- readWriteExcel.ReadWriteExcelGeneric -->
+      <class name="dropDown.dropDown">
+        <methods>
+          <include name="setUp"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- dropDown.dropDown -->
+      <class name="dataDriven.Login">
+        <methods>
+          <include name="shutDown"/>
+          <include name="setUp"/>
+          <include name="loginGuru99" invocation-numbers="2"/>
+        </methods>
+      </class> <!-- dataDriven.Login -->
+      <class name="radioAndCheckbox.RadioAndCheckbox">
+        <methods>
+          <include name="setUp"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- radioAndCheckbox.RadioAndCheckbox -->
+      <class name="dbConnection.TestDataBase">
+        <methods>
+          <include name="dataBase"/>
+        </methods>
+      </class> <!-- dbConnection.TestDataBase -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

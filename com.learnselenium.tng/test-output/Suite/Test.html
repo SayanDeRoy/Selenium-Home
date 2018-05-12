@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>16/5/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Mar 15 16:36:15 IST 2017</td>
+<td>Started on:</td><td>Sat Mar 25 23:06:32 IST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>1 seconds (1239 ms)</td>
+<tr><td>Total time:</td><td>462 seconds (462820 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,279 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='dbConnection.TestDataBase.dataBase()'><b>dataBase</b><br>Test class: dbConnection.TestDataBase</td>
+<td><div><pre>java.lang.ClassNotFoundException: sun.jdbc.odbc.JdbcOdbcDriver
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at dbConnection.TestDataBase.dataBase(TestDataBase.java:15)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace883521348", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace883521348'><pre>java.lang.ClassNotFoundException: sun.jdbc.odbc.JdbcOdbcDriver
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at dbConnection.TestDataBase.dataBase(TestDataBase.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>dbConnection.TestDataBase@402a079c</td></tr>
+<tr>
+<td title='wait.ImplicitWait1.implicitWait1()'><b>implicitWait1</b><br>Test class: wait.ImplicitWait1</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[text()=&apos;QTP&apos;]&quot;}
+Command duration or timeout: 30.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;32a636c&apos;, time: &apos;2015-03-05 22:01:35&apos;
+System info: host: &apos;DESKTOP-4SC5RBR&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=26.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c3052fed-ef9e-49a7-8e52-8a5152022146
+*** Element info: {Using=xpath, value=//p[text()=&apos;QTP&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at wait.ImplicitWait1.implicitWait1(ImplicitWait1.java:28)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[text()=&apos;QTP&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;32a636c&apos;, time: &apos;2015-03-05 22:01:35&apos;
+System info: host: &apos;DESKTOP-4SC5RBR&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/sayan/AppData/Local/Temp/anonymous1810401965634235683webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/sayan/AppData/Local/Temp/anonymous1810401965634235683webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace422409467", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace422409467'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[text()=&apos;QTP&apos;]&quot;}
+Command duration or timeout: 30.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;32a636c&apos;, time: &apos;2015-03-05 22:01:35&apos;
+System info: host: &apos;DESKTOP-4SC5RBR&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=26.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c3052fed-ef9e-49a7-8e52-8a5152022146
+*** Element info: {Using=xpath, value=//p[text()=&apos;QTP&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at wait.ImplicitWait1.implicitWait1(ImplicitWait1.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[text()=&apos;QTP&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;32a636c&apos;, time: &apos;2015-03-05 22:01:35&apos;
+System info: host: &apos;DESKTOP-4SC5RBR&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/sayan/AppData/Local/Temp/anonymous1810401965634235683webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/sayan/AppData/Local/Temp/anonymous1810401965634235683webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+</pre></div></td>
+<td>71</td>
+<td>wait.ImplicitWait1@f6c48ac</td></tr>
+<tr>
+<td title='dataDriven.Login.loginGuru99()'><b>loginGuru99</b><br>Test class: dataDriven.Login<br>Parameters: prime03@gmail.com, Tester01</td>
+<td><div><pre>java.lang.AssertionError: expected [Customer Login] but found [My Account]
+	at dataDriven.Login.loginGuru99(Login.java:46)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace478139423", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace478139423'><pre>java.lang.AssertionError: expected [Customer Login] but found [My Account]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at dataDriven.Login.loginGuru99(Login.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>8</td>
+<td>dataDriven.Login@271053e1</td></tr>
+<tr>
+<td title='readWriteExcel.ReadWriteExcelGeneric.readWriteData()'><b>readWriteData</b><br>Test class: readWriteExcel.ReadWriteExcelGeneric</td>
+<td><div><pre>java.lang.IllegalArgumentException: Invalid column index (16384).  Allowable column range for EXCEL2007 is (0..16383) or (&apos;A&apos;..&apos;XFD&apos;)
+	at org.apache.poi.xssf.usermodel.XSSFCell.checkBounds(XSSFCell.java:1004)
+	at org.apache.poi.xssf.usermodel.XSSFCell.setCellNum(XSSFCell.java:854)
+	at org.apache.poi.xssf.usermodel.XSSFRow.createCell(XSSFRow.java:209)
+	at org.apache.poi.xssf.usermodel.XSSFRow.createCell(XSSFRow.java:181)
+	at org.apache.poi.xssf.usermodel.XSSFRow.createCell(XSSFRow.java:44)
+	at readWriteLib.ReadWriteConfig.setAllData(ReadWriteConfig.java:106)
+	at readWriteExcel.ReadWriteExcelGeneric.readWriteData(ReadWriteExcelGeneric.java:14)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace237373286", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace237373286'><pre>java.lang.IllegalArgumentException: Invalid column index (16384).  Allowable column range for EXCEL2007 is (0..16383) or (&apos;A&apos;..&apos;XFD&apos;)
+	at org.apache.poi.xssf.usermodel.XSSFCell.checkBounds(XSSFCell.java:1004)
+	at org.apache.poi.xssf.usermodel.XSSFCell.setCellNum(XSSFCell.java:854)
+	at org.apache.poi.xssf.usermodel.XSSFRow.createCell(XSSFRow.java:209)
+	at org.apache.poi.xssf.usermodel.XSSFRow.createCell(XSSFRow.java:181)
+	at org.apache.poi.xssf.usermodel.XSSFRow.createCell(XSSFRow.java:44)
+	at readWriteLib.ReadWriteConfig.setAllData(ReadWriteConfig.java:106)
+	at readWriteExcel.ReadWriteExcelGeneric.readWriteData(ReadWriteExcelGeneric.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>5</td>
+<td>readWriteExcel.ReadWriteExcelGeneric@553f17c</td></tr>
+<tr>
+<td title='autoIT.FileUpload1.upload()'><b>upload</b><br>Test class: autoIT.FileUpload1</td>
+<td><div><pre>java.io.IOException: Cannot run program &quot;C:\Selenium&quot;: CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessBuilder.start(Unknown Source)
+	at java.lang.Runtime.exec(Unknown Source)
+	at java.lang.Runtime.exec(Unknown Source)
+	at java.lang.Runtime.exec(Unknown Source)
+	at autoIT.FileUpload1.upload(FileUpload1.java:20)
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.&lt;init&gt;(Unknown Source)
+	at java.lang.ProcessImpl.start(Unknown Source)
+	... 29 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace144445623", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace144445623'><pre>java.io.IOException: Cannot run program &quot;C:\Selenium&quot;: CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessBuilder.start(Unknown Source)
+	at java.lang.Runtime.exec(Unknown Source)
+	at java.lang.Runtime.exec(Unknown Source)
+	at java.lang.Runtime.exec(Unknown Source)
+	at autoIT.FileUpload1.upload(FileUpload1.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.&lt;init&gt;(Unknown Source)
+	at java.lang.ProcessImpl.start(Unknown Source)
+	... 29 more
+</pre></div></td>
+<td>8</td>
+<td>autoIT.FileUpload1@13deb50e</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,10 +348,85 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.learnselenium.tng.ReadExcelGeneric.read()'><b>read</b><br>Test class: com.learnselenium.tng.ReadExcelGeneric</td>
+<td title='com.learnselenium.tng.LaunchFirefox.TestFireFox()'><b>TestFireFox</b><br>Test class: com.learnselenium.tng.LaunchFirefox</td>
+<td></td>
+<td>11</td>
+<td>com.learnselenium.tng.LaunchFirefox@589838eb</td></tr>
+<tr>
+<td title='radioAndCheckbox.RadioAndCheckbox.checkBox()'><b>checkBox</b><br>Test class: radioAndCheckbox.RadioAndCheckbox</td>
+<td></td>
+<td>0</td>
+<td>radioAndCheckbox.RadioAndCheckbox@42dafa95</td></tr>
+<tr>
+<td title='dropDown.dropDown.dropDownIndex()'><b>dropDownIndex</b><br>Test class: dropDown.dropDown</td>
+<td></td>
+<td>6</td>
+<td>dropDown.dropDown@4f7d0008</td></tr>
+<tr>
+<td title='dropDown.dropDown.dropDownValue()'><b>dropDownValue</b><br>Test class: dropDown.dropDown</td>
+<td></td>
+<td>4</td>
+<td>dropDown.dropDown@4f7d0008</td></tr>
+<tr>
+<td title='dropDown.dropDown.dropDownVisible()'><b>dropDownVisible</b><br>Test class: dropDown.dropDown</td>
+<td></td>
+<td>4</td>
+<td>dropDown.dropDown@4f7d0008</td></tr>
+<tr>
+<td title='dropDown.DropDown1.dropDownVisible()'><b>dropDownVisible</b><br>Test class: dropDown.DropDown1</td>
 <td></td>
 <td>1</td>
-<td>com.learnselenium.tng.ReadExcelGeneric@14acaea5</td></tr>
+<td>dropDown.DropDown1@239963d8</td></tr>
+<tr>
+<td title='dropDown.DropDown2.dropDownVisible()'><b>dropDownVisible</b><br>Test class: dropDown.DropDown2</td>
+<td></td>
+<td>5</td>
+<td>dropDown.DropDown2@2f686d1f</td></tr>
+<tr>
+<td title='wait.ExplicitWait.explicitWait()'><b>explicitWait</b><br>Test class: wait.ExplicitWait</td>
+<td></td>
+<td>17</td>
+<td>wait.ExplicitWait@57baeedf</td></tr>
+<tr>
+<td title='com.learnselenium.tng.IETestNG.ieTestNG()'><b>ieTestNG</b><br>Test class: com.learnselenium.tng.IETestNG</td>
+<td></td>
+<td>34</td>
+<td>com.learnselenium.tng.IETestNG@5f341870</td></tr>
+<tr>
+<td title='dataDriven.Login.loginGuru99()'><b>loginGuru99</b><br>Test class: dataDriven.Login<br>Parameters: prime01@gmail.com, Tester01</td>
+<td></td>
+<td>9</td>
+<td>dataDriven.Login@271053e1</td></tr>
+<tr>
+<td title='dataDriven.Login.loginGuru99()'><b>loginGuru99</b><br>Test class: dataDriven.Login<br>Parameters: prime02@gmail.com, Tester01</td>
+<td></td>
+<td>8</td>
+<td>dataDriven.Login@271053e1</td></tr>
+<tr>
+<td title='radioAndCheckbox.RadioAndCheckbox.radioButton()'><b>radioButton</b><br>Test class: radioAndCheckbox.RadioAndCheckbox</td>
+<td></td>
+<td>0</td>
+<td>radioAndCheckbox.RadioAndCheckbox@42dafa95</td></tr>
+<tr>
+<td title='readWriteExcel.ReadExcelGeneric.read()'><b>read</b><br>Test class: readWriteExcel.ReadExcelGeneric</td>
+<td></td>
+<td>0</td>
+<td>readWriteExcel.ReadExcelGeneric@3fee9989</td></tr>
+<tr>
+<td title='com.learnselenium.tng.Firefox.start()'><b>start</b><br>Test class: com.learnselenium.tng.Firefox</td>
+<td></td>
+<td>9</td>
+<td>com.learnselenium.tng.Firefox@4cf777e8</td></tr>
+<tr>
+<td title='wait.ImplicitWait.tryCatch()'><b>tryCatch</b><br>Test class: wait.ImplicitWait</td>
+<td></td>
+<td>40</td>
+<td>wait.ImplicitWait@6500df86</td></tr>
+<tr>
+<td title='exceptionHandling.ExceptionHandling1.tryCatch()'><b>tryCatch</b><br>Test class: exceptionHandling.ExceptionHandling1</td>
+<td></td>
+<td>39</td>
+<td>exceptionHandling.ExceptionHandling1@59ec2012</td></tr>
 </table><p>
 </body>
 </html>

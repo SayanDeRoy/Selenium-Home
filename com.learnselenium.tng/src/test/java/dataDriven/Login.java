@@ -1,5 +1,8 @@
 package dataDriven;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.AssertJUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -43,7 +46,7 @@ public class Login {
 		expectedTitle = "My Account";
 		actualTitle = driver.getTitle();
 		
-		Assert.assertEquals(expectedTitle, actualTitle);
+		AssertJUnit.assertEquals(expectedTitle, actualTitle);
 	}
 	@AfterMethod
 	public void shutDown(){

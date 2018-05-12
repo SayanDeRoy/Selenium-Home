@@ -3,6 +3,22 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
+      <class name="com.learnselenium.tng.IETestNG"/>
+      <class name="dataDriven.Login"/>
+      <class name="wait.ImplicitWait1"/>
+      <class name="autoIT.FileUpload"/>
+      <class name="com.learnselenium.tng.LaunchFirefox"/>
+      <class name="readWriteExcel.ReadWriteExcelGeneric"/>
+      <class name="dbConnection.TestDataBase"/>
+      <class name="wait.ImplicitWait"/>
+      <class name="dropDown.dropDown"/>
+      <class name="wait.ExplicitWait"/>
+      <class name="dropDown.DropDown1"/>
+      <class name="dropDown.DropDown2"/>
+      <class name="exceptionHandling.ExceptionHandling1"/>
+      <class name="action.dragDrop"/>
+      <class name="readWriteExcel.ReadExcelGeneric"/>
+      <class name="com.learnselenium.tng.Firefox"/>
       <class name="radioAndCheckbox.RadioAndCheckbox"/>
     </classes>
   </test> <!-- Test -->

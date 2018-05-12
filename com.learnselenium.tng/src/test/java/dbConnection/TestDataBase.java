@@ -1,5 +1,6 @@
 package dbConnection;
 
+import org.testng.annotations.Test;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -12,14 +13,21 @@ public class TestDataBase {
 	@Test
 	public void dataBase() throws Exception{
             				// This will load the driver
-			Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+			Class.forName("oracle.jdbc.driver.OracleDriver");
 			System.out.println("Driver Loaded");
 
 // This will connect with Database , getConnection taking three argument
 //  first argument Test_Oracle is the dsn which you can change as per your system,
 // second argument is username and third argument is password
 
-			Connection con=DriverManager.getConnection("jdbc:odbc:OracleDB","SYSTEM","Infosys21$");
+			//Connection con=DriverManager.getConnection("jdbc:odbc:OracleDB","SYSTEM","Infosys21$");
+			String serverName = "localhost";
+	        String portNumber = "1521";
+	        String sid = "orcl";
+	        String url = "jdbc:oracle:thin:@" + serverName + ":" + portNumber + ":" + sid;
+	        String username = "SYSTEM";
+	        String password = "Infosys21$";
+	        Connection con = DriverManager.getConnection(url, username, password);
 			System.out.println("Connection created");
 
 // This will create statement  

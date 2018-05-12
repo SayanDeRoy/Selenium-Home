@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="autoIT.FileUpload1">
+      <class name="dataDriven.Login">
         <methods>
-          <include name="upload"/>
+          <include name="loginGuru99"/>
         </methods>
-      </class> <!-- autoIT.FileUpload1 -->
+      </class> <!-- dataDriven.Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [BSE Suite]">
+  <listeners>
+    <listener class-name="library.Listeners"/>
+  </listeners>
+  <test name="Regression Test(failed)">
+    <classes>
+      <class name="priority1.LandingPageTitleVerification">
+        <methods>
+          <include name="initializeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="landingPageTitleVerification"/>
+        </methods>
+      </class> <!-- priority1.LandingPageTitleVerification -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [BSE Suite] -->

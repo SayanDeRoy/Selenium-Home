@@ -1,5 +1,7 @@
 package radioAndCheckbox;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -14,6 +16,7 @@ public class RadioAndCheckbox {
 	
 	WebDriver driver;
 	
+	@BeforeMethod
 	@BeforeTest
 	public void setUp() throws Exception{
 		

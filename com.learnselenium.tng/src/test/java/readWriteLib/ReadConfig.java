@@ -47,6 +47,7 @@ public class ReadConfig
 		sheet1 = wb.getSheetAt(sheetNumber);
 		rowCount = sheet1.getLastRowNum()-sheet1.getFirstRowNum();
 		System.out.println(rowCount);
+		System.out.println(sheet1.getFirstRowNum()+" and "+sheet1.getLastRowNum());
 		
 		for(int i = sheet1.getFirstRowNum(); i<rowCount+1; i++)
 		{

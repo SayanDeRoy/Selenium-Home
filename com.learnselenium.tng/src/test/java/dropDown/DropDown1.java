@@ -1,5 +1,8 @@
 package dropDown;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.AssertJUnit;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -17,6 +20,7 @@ WebDriver driver;
 WebElement sort;
 Select sortByValues;
 
+	@BeforeMethod
 	@BeforeTest
 	public void setUp() throws Exception{
 		
@@ -42,7 +46,7 @@ Select sortByValues;
 		{
 			WebElement ele = actList.get(i);
 			System.out.println("All Values are: "+ele.getText());
-			Assert.assertEquals(ele.getText(), expValues[i]);
+			AssertJUnit.assertEquals(ele.getText(), expValues[i]);
 		}
 	}
 	@AfterTest

@@ -1,5 +1,7 @@
 package dropDown;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -15,6 +17,7 @@ WebDriver driver;
 WebElement sort;
 Select sortByValues;
 
+	@BeforeMethod
 	@BeforeTest
 	public void setUp() throws Exception{
 		
@@ -26,6 +29,7 @@ Select sortByValues;
 	@Test(priority = 1)
 	public void dropDownVisible() throws Exception{
 		
+		//driver.findElement(By.xpath("//i[@class='dropdown icon']")).click();
 		driver.findElement(By.xpath("html/body/div[4]/div[1]/div[2]/div[3]/div[1]/div[8]/div")).click();
 		
 		List<WebElement> actList = driver.findElements(By.xpath("//div[@class='menu transition visible']"

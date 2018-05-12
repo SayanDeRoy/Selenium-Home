@@ -1,17 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="160066" started-at="2017-03-25T12:38:56Z" finished-at="2017-03-25T12:41:36Z">
+  <suite name="Default suite" duration-ms="763" started-at="2017-05-01T09:35:51Z" finished-at="2017-05-01T09:35:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="160066" started-at="2017-03-25T12:38:56Z" finished-at="2017-03-25T12:41:36Z">
-      <class name="autoIT.FileUpload1">
-        <test-method status="PASS" signature="upload()[pri:0, instance:autoIT.FileUpload1@5622fdf]" name="upload" duration-ms="160018" started-at="2017-03-25T18:08:56Z" finished-at="2017-03-25T18:11:36Z">
+    <test name="Default test" duration-ms="763" started-at="2017-05-01T09:35:51Z" finished-at="2017-05-01T09:35:51Z">
+      <class name="dataDriven.Login">
+        <test-method status="FAIL" signature="loginGuru99(java.lang.String, java.lang.String)[pri:0, instance:dataDriven.Login@1e88b3c]" name="loginGuru99" duration-ms="0" started-at="2017-05-01T15:05:51Z" data-provider="Guru99" finished-at="2017-05-01T15:05:51Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:161)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:429)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: java.lang.NullPointerException
+	at readWriteLib.ReadWriteConfig.getData(ReadWriteConfig.java:51)
+	at dataDriven.Login.getTestData(Login.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:135)
+	... 20 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- upload -->
-      </class> <!-- autoIT.FileUpload1 -->
+        </test-method> <!-- loginGuru99 -->
+      </class> <!-- dataDriven.Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
